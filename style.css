@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --text-color: #333;
+  --bg-color: #fff;
+  --border-color: #ddd;
+  --error-color: #ea4335;
+  --success-color: #34a853;
+}
+
+.dark-mode {
+  --text-color: #f1f1f1;
+  --bg-color: #121212;
+  --border-color: #444;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#themeToggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.interactive-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.event-box {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-box:hover {
+  transform: scale(1.02);
+}
+
+.component {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.faq-answer {
+  padding: 10px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: none;
+}
+
+.success-message {
+  color: var(--success-color);
+  margin-top: 15px;
+  font-weight: bold;
+  display: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
